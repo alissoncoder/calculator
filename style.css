@@ -1,0 +1,102 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #edf0ff
+}
+#calculator{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: hsl(0, 0%, 15%);
+    border-radius: 15px;
+    max-width: 400px;
+    overflow: hidden;
+    height: auto;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.588);
+}
+#display{
+    height: 80px;
+    width: 100%;
+    padding: 20px;
+    font-size: 4rem;
+    text-align: left;
+    border: none;
+    background-color: hsl(0, 0%, 20%);
+    color: white;
+}
+#keys{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 7px;
+    padding: 17px;
+}
+button{
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    border: none;
+    background-color: hsl(0, 0%, 30%);
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+button:hover{
+    background-color: hsl(0, 0%, 40%);
+}
+button:active{
+    background-color: hsl(0, 0%, 50%);
+}
+.operator-btn{
+    background-color:#a6b0dc
+}
+.operator-btn:hover{
+    background-color: #bcc5ed
+}
+.operator-btn:active{
+    background-color: #dee2f6
+}
+#calculate-btn {
+    background-color: rgb(223, 222, 222);
+    color: rgb(14, 14, 14);
+}
+#calculate-btn:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(14, 14, 14);
+}
+#calculate-btn:active {
+    background-color: rgb(255, 255, 255);
+    color: rgb(14, 14, 14);
+}
+.galinha {
+    z-index: 1;
+    background-image: url(galinha.png);
+    background-size: 100%;
+    background-position: 0% -50px;
+    background-repeat: no-repeat;
+}
+@media (max-width: 450px) {
+    #calculator {
+        max-width: 330px;
+    }
+    #display {
+        font-size: 3.5rem;
+    }
+    button {
+        height: 70px;
+        width: 70px;
+    }
+}
+@media (max-width: 350px) {
+    #calculator {
+        max-width: 300px;
+    }
+    #display {
+        font-size: 3rem;
+    }
+    button {
+        height: 60px;
+        width: 60px;
+    }
+}
